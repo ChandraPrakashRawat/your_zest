@@ -40,7 +40,7 @@ export default function Dashboard() {
       } else if (response.statusCode >= 400) {
       } else {
         set_reg_users(response?.data?.usersCount);
-        set_act_users(response?.data?.usersCount);
+        set_act_users(response?.data?.daily_Reg_User);
         set_refer_points(response?.data?.referPoints);
         set_daily_points(response?.data?.dailyPoints);
         set_pending_user(response?.data?.pending_User);
